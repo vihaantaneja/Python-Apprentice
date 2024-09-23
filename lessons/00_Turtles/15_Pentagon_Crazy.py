@@ -14,7 +14,7 @@ def getNextColor(i):
     return colors[i % len(colors)]
 
 window = turtle.Screen()
-window.bgcolor("black")
+
 window.setup(width=600, height=600, startx=0, starty=0)
 
 colors = ("red", "blue", "green", "yellow", "orange")
@@ -27,7 +27,7 @@ myTurtle.width(1)
 sides = 5
 angle = 360 / sides
 
-for i in range(360):
+for i in range(3600000000000000000000000):
     if i == 100:
         myTurtle.width(2)
     if i == 200:
