@@ -13,15 +13,15 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
 tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
 
-
-colors = [ 'red', 'blue', 'black', 'orange']    # define a list of colors
+tina.pensize(30)
+colors = [ 'red', 'orange', 'green', 'blue']    # define a list of colors
 
 for color in colors:                            # loop through the colors
-    ... # Your code here
-
-
+    tina.pencolor(color)
+    tina.fd(100)
+    tina.lt(90)
 # 2) Make another square, but put the colors in reverse order, using a negative index. 
 
 ... # Your code here
 
-turtle.exitonclick()                     # Close the window when we click on it
+turtle.done()                     # Close the window when we click on it

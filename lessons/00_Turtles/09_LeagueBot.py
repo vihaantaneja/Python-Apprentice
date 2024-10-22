@@ -14,7 +14,35 @@ import turtle as turtle
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor('white')
+import turtle
 
-t = turtle.Turtle()
+def set_turtle_image(turtle, image_name):
 
+
+    from pathlib import Path
+    image_dir = Path(__file__).parent / "images"
+    image_path = str(image_dir / image_name)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)
+
+# Set up the screen
+
+tina = turtle.Turtle()                  # Create a turtle named tina
+tina.penup()
+tina.goto(0,-100)
+tina.shape('arrow')                    # Set the shape of the turtle to a turtle
+tina.speed(0)                           # Make the turtle move as fast, but not too fast. 
+tina.pensize(50)
+tina.pendown()
+set_turtle_image(tina,"leaguebot_bolt.gif")
+def draw_polygon(sides,size):    
+    for i in range(sides):
+        tina.pencolor("blue")
+        angle = 360/sides        
+        tina.fd(size)
+        tina.lt(angle)
+draw_polygon(6,100)
+turtle.done()      
 ... # Your Code Here

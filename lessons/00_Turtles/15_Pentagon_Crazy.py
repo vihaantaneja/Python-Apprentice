@@ -17,19 +17,19 @@ window = turtle.Screen()
 
 window.setup(width=600, height=600, startx=0, starty=0)
 
-colors = ("red", "blue", "green", "yellow", "orange")
-
+colors = (getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor())
+turtle.bgcolor("black")
 myTurtle = turtle.Turtle()
 myTurtle.shape("turtle")
 myTurtle.speed(0)
-myTurtle.width(1)
-
+myTurtle.width(10)
+myTurtle.pensize(10)
 sides = 5
 angle = 360 / sides
 
 for i in range(3600000000000000000000000):
     if i == 100:
-        myTurtle.width(2)
+        myTurtle.width(100)
     if i == 200:
         myTurtle.width(3)
     myTurtle.pencolor(getNextColor(i))
