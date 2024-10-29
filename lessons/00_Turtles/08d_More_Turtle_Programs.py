@@ -2,7 +2,7 @@
 
 
 """this is the pikanado 3.0 ultra
-"""
+
 import turtle
 import random
 a = random.randint(-300, 300)
@@ -69,9 +69,9 @@ for i in range(100):
 
 tina.goto(0,0)
 turtle.done()                    # Close the window when we click on it
-
+"""
 # this is the secret moustach jiggle code!
-"""import turtle
+import turtle
 
 def set_turtle_image(turtle, image_name):
 
@@ -119,6 +119,6 @@ for i in range(1000):
     tina.goto(0,10)
 turtle.done()      
 ... # Your code here
-"""
+
     
 

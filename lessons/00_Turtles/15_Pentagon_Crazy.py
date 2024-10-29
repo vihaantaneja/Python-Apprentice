@@ -27,7 +27,7 @@ myTurtle.pensize(10)
 sides = 5
 angle = 360 / sides
 
-for i in range(3600000000000000000000000):
+for i in range(36000000000000000000000000000000000000):
     if i == 100:
         myTurtle.width(100)
     if i == 200:
