@@ -32,7 +32,7 @@ def vending_machine(money):
 window = Tk()
 window.withdraw()
 
-money_in_dollars = 3.00
+money_in_dollars = 100.00
 
 # TODO) Write a while loop that ends when you have no money left
 while money_in_dollars > 0:
