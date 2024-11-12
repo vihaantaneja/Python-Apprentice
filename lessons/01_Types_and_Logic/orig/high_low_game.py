@@ -9,7 +9,7 @@ window = Tk()
 window.withdraw()
 
 # TODO 5) Change this line to give you a random number between 1 - 100
-rand_num = random.randint(1,100)
+rand_num = random.randint(1,10)
 
 # TODO 4) Print out the random variable above
 print(rand_num)

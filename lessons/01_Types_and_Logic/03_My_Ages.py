@@ -36,6 +36,9 @@ from tkinter import messagebox, simpledialog, Tk # import required modules
 window = Tk()     # Create a window object
 window.withdraw() # Hide the window; we just want to see pop ups
 
+while 1==1:
+    q=simpledialog.askstring("PIE?","type in here")
+    messagebox.showinfo("",q.title())
 # Ask the user's age
 
 # Use if statements to determine the age group
