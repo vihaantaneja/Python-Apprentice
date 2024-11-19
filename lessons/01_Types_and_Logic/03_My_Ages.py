@@ -35,10 +35,63 @@ from tkinter import messagebox, simpledialog, Tk # import required modules
 
 window = Tk()     # Create a window object
 window.withdraw() # Hide the window; we just want to see pop ups
+q=simpledialog.askstring("How old are you?","type in here")
+q=float(q)
+my_age = 10.4 
+if q==my_age:
+    messagebox.showinfo("","You are pretty awesome!")
+elif q>=0 and q<=2:
+    messagebox.showinfo("","You are a baby!")
+elif q>=2 and q<=5:
+    messagebox.showinfo("","You are a toddler!")
+elif q>=5 and q<=12:
+    messagebox.showinfo("","You are a child!")
+elif q>=12 and q<=18:
+    messagebox.showinfo("","You are a teen!")
+elif q>=18 and q<=65:
+    messagebox.showinfo("","You are an adult!")
+else:
+    messagebox.showinfo("","You are a senior!")
 
-while 1==1:
-    q=simpledialog.askstring("PIE?","type in here")
-    messagebox.showinfo("",q.title())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Ask the user's age
 
 # Use if statements to determine the age group
