@@ -6,7 +6,7 @@ from tkinter import messagebox, simpledialog, Tk
 
 # Write you code under the if __name__ == '__main__': below
 def vending_machine(money):
-    items_for_sale = {"water" : 0.50, "soda" : 1.00, "pretzels" : 1.00, "candy bar" : 1.50, 'exit' : 0.00}
+    items_for_sale = {"water" : 0.50, "a car" : 1.00, "pretzels" : 1.00, "candy bar" : 1.50, 'exit' : 0.00}
 
     while True:
         intro_str = "Welcome to the vending machine! You have " +\
@@ -33,7 +33,7 @@ window = Tk()
 window.withdraw()
 
 money_in_dollars = 100.00
-
+money_in_dollars = money_in_dollars**100
 # TODO) Write a while loop that ends when you have no money left
 while money_in_dollars > 0:
 

@@ -20,6 +20,14 @@ simpledialog.askfloat() or simpledialog.askinteger(), and for the math operation
 you can ask for a string with simpledialog.askstring().
 
 """
+from tkinter import messagebox, simpledialog, Tk # import required modules
+window = Tk()     # Create a window object
+window.withdraw() # Hide the window; we just want to see pop up
+x=simpledialog.askinteger("", "input1")
+y=simpledialog.askinteger("", "input2")
+messagebox.showinfo("",x+y)
+
+
 
 # Import the required modules
 
