@@ -23,12 +23,22 @@ you can ask for a string with simpledialog.askstring().
 from tkinter import messagebox, simpledialog, Tk # import required modules
 window = Tk()     # Create a window object
 window.withdraw() # Hide the window; we just want to see pop up
-x=simpledialog.askinteger("", "input1")
-y=simpledialog.askinteger("", "input2")
-messagebox.showinfo("",x+y)
-
-
-
+x=simpledialog.askinteger("", "input1 1,2,3...")
+y=simpledialog.askinteger("", "input2 1,2,3...")
+z=simpledialog.askstring("", "input3 plus, minus, times, divided by, to the power of")
+z=z.lower()
+if z == "plus":
+   messagebox.showinfo("",x+y) 
+elif z == "minus":
+   messagebox.showinfo("",x-y) 
+elif z == "times":
+   messagebox.showinfo("",x*y) 
+elif z == "divided by":
+   messagebox.showinfo("",x/y) 
+elif z == "to the power of":
+   messagebox.showinfo("",x**y) 
+else:
+    messagebox.showinfo("","I don't know and I don't care!") 
 # Import the required modules
 
 # Create a window object
