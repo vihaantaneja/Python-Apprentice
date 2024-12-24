@@ -7,9 +7,9 @@ append them to the story
 """
 
 words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the', 
-    'time', 'to', 'who', '🐈', '👧', 'and', 'went', 'had', 'play', '⚽.', 'they']
+    'time', 'to', 'who', '🐈', '👧', 'and', 'went', 'had', 'play', '⚽.', 'they',"(it didn't say it had to make sense)"]
 
-story = []
+story = words
 
 # Create a story using the words in the list
 
