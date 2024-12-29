@@ -34,6 +34,17 @@ app = App("Numbers Grid", layout="grid")
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
 
+for j in range(10):
+    for k in range(1,10):
+        if k%3==0 and k%5==0:
+            print("🐍",end=" ")
+        elif k%3==0:
+            print("🍄",end=" ")
+        elif k%5==0:
+            print("🦡",end=" ")
+        else:
+            print(k,end=" ")
+    print()
 # In the loop, calculate or increment the number
 
 # Use % determing the display, using fizzbuzz rules
@@ -41,5 +52,5 @@ app = App("Numbers Grid", layout="grid")
 # If you are displaying a number, calculate the sum of the digits and determine the color
 
 # Call Text(app, text='...', grid=[col, row], color=...) to display something. 
-
+Text(app, text='🦡', grid=[10,10], color="red")
 app.display()
