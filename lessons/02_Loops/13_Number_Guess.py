@@ -39,18 +39,25 @@ def ask_integer(prompt):
             return int(input(prompt))
         except ValueError:
             print("Please enter a valid number!")
-
-
 # Pick the random number
-
+x=random.randint(1,100)
 # In your loop:
-
+ans=0
+while ans!= x:
     # Get the user's guess
-
-    # If the user's guess is divisible by 7, tell the user to start over
-
+    ans=ask_integer("what's your guess?")
+    # If the user's guess is divisible by 7(i'm doing a random integer), tell the user to start over
+    if ans%x==0:
+        print("reset!")
+        x=random.randint(1,100)
+        continue
     # If the user's guess is too high, tell the user
+    elif ans>x:
+        print("too high!")
     # If the user's guess is too low, tell the user
+    elif ans<x:
+        print("too low!")
     # If the user's guess is correct, tell the user and break out of the loop
-
+    else:
+        print("you win")
 
